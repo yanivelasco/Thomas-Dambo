@@ -3,3 +3,30 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: 'Autography';
+    font-display: swap;
+    src: url('/fonts/autography/Autography.otf')
+      format('truetype');
+  }
+
+
+
+@font-face {
+    font-family: 'Helvetica';
+    font-display: swap;
+    src: url('/fonts/HelveticaMedExtObl.ttf');
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+:root{
+   
+    --white--:	rgba(#FDFDFC);
+    --black--: rgba(#040D10);
+    --green--: rgba(#456B6A);
+
+}
