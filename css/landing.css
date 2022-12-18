@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Autography";
+  font-display: swap;
+  src: url("/fonts/autography/Autography.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("/fonts/HelveticaMedExtObl.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+  --white--: #fdfdfc;
+  --black--: #040d10;
+  --green--: #456b6a;
+
+  --h1: 2.5rem;
+  --h2: 1.6rem;
+  --h3: 2rem;
+  --h4: 1.3rem;
+  --p: 0.8rem;
+  --p_width: 80%;
+
+  --text_art_top_padding: 25%;
+  --image_art_top_padding: 5%;
+
+  /* SCULPTURE art images size */
+  --art_image_size: 90%;
+}
+
+h1 {
+  font-size: var(--h1);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+h2 {
+  font-size: var(--h2);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+h3 {
+  font-size: var(--h3);
+  color: var(--black--);
+  font-family: "Autography";
+}
+h4 {
+  font-size: var(--h4);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+p {
+  font-size: var(--p);
+  color: var(--black--);
+  font-family: "Helvetica";
+  width: var(--p_width);
+}
+/* ++++++++++++++++++++++++++++++++++MAIN++++++++++++++++++++++++++++++++++ */
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ////////////////////////////HERDER//////////////////////////// */
+
+/* ////////////////////////////ART//////////////////////////// */
+#art_part {
+  width: 100vw;
+}
+.art_article {
+}
+.art_info {
+  height: 50vh;
+
+  padding-top: var(--text_art_top_padding);
+  margin: auto;
+  text-align: center;
+  margin: auto;
+}
+.art_info h2 {
+  margin-bottom: 5%;
+  width: 70%;
+  margin: auto;
+}
+.art_info p {
+  margin: auto;
+
+  width: 70%;
+
+  text-align: left;
+}
+#sculpture {
+  background-image: url(/img/bg_small_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#birdhouse {
+  background-image: url(/img/bg_small_4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wall {
+  background-image: url(/img/bg_small_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.art_image {
+  margin: auto;
+  width: var(--art_image_size);
+  padding-top: var(--image_art_top_padding);
+}
+.art_image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ////////////////////////////SHOP//////////////////////////// */
+
+/* ////////////////////////////MAP//////////////////////////// */
+
+/* ////////////////////////////ABOUT//////////////////////////// */
+
+/* ////////////////////////////GALLERY//////////////////////////// */
+
+/* ////////////////////////////FOOTER//////////////////////////// */
+
+@media only screen and (min-width: 500px) {
+  :root {
+    --text_art_top_padding: 30%;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 75%;
+  }
+  .art_info {
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  :root {
+    --h2: 2.4rem;
+    --p: 1.2rem;
+    --p_width: 80%;
+
+    --text_art_top_padding: 30%;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 65%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    --h2: 3rem;
+    --p: 1.2rem;
+    --p_width: 80%;
+
+    --text_art_top_padding: 0;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 70%;
+  }
+
+  #sculpture {
+    background-image: none;
+  }
+  #birdhouse {
+    background-image: none;
+  }
+  #wall {
+    background-image: none;
+  }
+
+  #art_part {
+    height: 300vh;
+    background-image: url(/img/bg_community.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .art_article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+  }
+  .art_article:nth-child(2),
+  .art_article:nth-child(4) {
+    grid-auto-flow: dense;
+    direction: rtl;
+  }
+  .art_info h2 {
+    margin-bottom: 5%;
+  }
+  .art_info {
+    text-align: left;
+  }
+}
