@@ -86,7 +86,7 @@
   
     padding-top: var(--text_art_top_padding);
     margin: auto;
-    text-align: center;
+    text-align: left;
     width: 70%;
   }
   .art_info h2 {
@@ -99,9 +99,12 @@
   
     width: 70%;
   }
-  .button {
-    margin-top: 5%;
+
+  #art_info_birdhouse{
+    margin-bottom: 30%;
+    width: 80%;
   }
+
   #sculpture {
     background-image: url(/img/bg_small_1.png);
     background-size: contain;
@@ -150,22 +153,35 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 30%;
 }
 
 /* FAMILY PICTURES */
 
 
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_family{
+    width: 40vw;
+    margin-block: 20%;
+}
+
 .family{
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:repeat(3, 1fr);
 
 }
 
-.grid > img{
-    height: 10vh;
+.portrait{
+    width: 100%;
 }
-
 
 
 
@@ -250,7 +266,7 @@
     .art_info {
       text-align: left;
       margin-left: 35%;
-      margin-top: 35%;
+      margin-top: 38%;
       /* margin-left: 10%;
       margin-right: 10%; */
     }
@@ -262,6 +278,19 @@
       width: 80%;
       margin-right: 50%;
     }
+
+    #art_info_birdhouse p {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+    #art_info_birdhouse{
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+
+
     /* #sculpture .art_info,
     #wall .art_info {
       text-align: right;
@@ -273,7 +302,3 @@
       margin-left: auto;
       margin-right: 0%;
     } */
-    .button {
-      margin-top: 10%;
-    }
-  }
