@@ -80,8 +80,7 @@
   #art_part {
     width: 100vw;
   }
-  .art_article {
-  }
+
   .art_info {
     height: 50vh;
   
@@ -166,3 +165,115 @@
 .grid > img{
     height: 10vh;
 }
+
+
+
+
+
+
+@media only screen and (min-width: 500px) {
+    :root {
+      --text_art_top_padding: 30%;
+      --image_art_top_padding: 15%;
+  
+      --art_image_size: 75%;
+    }
+    .art_info {
+      height: 45vh;
+    }
+  }
+  
+  @media only screen and (min-width: 700px) {
+    :root {
+      --h2: 2.4rem;
+      --p: 1.2rem;
+      --p_width: 80%;
+  
+      --text_art_top_padding: 30%;
+      --image_art_top_padding: 15%;
+  
+      --art_image_size: 65%;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    :root {
+      --h2: 3rem;
+      --p: 1.2rem;
+      --p_width: 80%;
+  
+      --text_art_top_padding: 0;
+      --image_art_top_padding: 0%;
+  
+      --art_image_size: 70%;
+    }
+  
+    #sculpture {
+      background-image: none;
+    }
+    #birdhouse {
+      background-image: none;
+    }
+    #wall {
+      background-image: none;
+    }
+  
+    #art_part {
+      height: 300vh;
+      background-image: url(/img/bg_community.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .art_article {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      height: 90vh;
+      width: 95%;
+      margin: auto;
+    }
+
+    .art_info{
+        grid-column-start: 2;
+    }
+
+    .art_image{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+
+    .art_article:nth-child(2),
+    .art_article:nth-child(4) {
+      grid-auto-flow: dense;
+      direction: rtl;
+    }
+    .art_info {
+      text-align: left;
+      margin-left: 35%;
+      margin-top: 35%;
+      /* margin-left: 10%;
+      margin-right: 10%; */
+    }
+    .art_info h2 {
+      margin-bottom: 5%;
+      width: 100%;
+    }
+    .art_info p {
+      width: 80%;
+      margin-right: 50%;
+    }
+    /* #sculpture .art_info,
+    #wall .art_info {
+      text-align: right;
+    } */
+    /* .art_image {
+      margin-left: 5%;
+    } */
+    /* .art_image:nth-child(4) {
+      margin-left: auto;
+      margin-right: 0%;
+    } */
+    .button {
+      margin-top: 10%;
+    }
+  }
