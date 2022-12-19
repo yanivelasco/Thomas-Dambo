@@ -71,6 +71,7 @@ p {
 html {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--white--);
 }
 
 /* ////////////////////////////HERDER//////////////////////////// */
@@ -87,7 +88,7 @@ html {
   padding-top: var(--text_art_top_padding);
   margin: auto;
   text-align: center;
-  margin: auto;
+  width: 70%;
 }
 .art_info h2 {
   margin-bottom: 5%;
@@ -98,8 +99,9 @@ html {
   margin: auto;
 
   width: 70%;
-
-  text-align: left;
+}
+.button {
+  margin-top: 5%;
 }
 #sculpture {
   background-image: url(/img/bg_small_1.png);
@@ -193,16 +195,38 @@ html {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 90vh;
+    width: 95%;
+    margin: auto;
   }
   .art_article:nth-child(2),
   .art_article:nth-child(4) {
     grid-auto-flow: dense;
     direction: rtl;
   }
-  .art_info h2 {
-    margin-bottom: 5%;
-  }
   .art_info {
     text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .art_info h2 {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .art_info p {
+    width: 100%;
+  }
+  #sculpture .art_info,
+  #wall .art_info {
+    text-align: right;
+  }
+  .art_image {
+    margin-left: 5%;
+  }
+  .art_image:nth-child(4) {
+    margin-left: auto;
+    margin-right: 0%;
+  }
+  .button {
+    margin-top: 10%;
   }
 }
