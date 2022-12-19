@@ -45,16 +45,19 @@ h1{
 h2{
     font-size: var(--h2);
     color: var(--black--);
+    font-family:'Staatliches';
 }
 
 h3{
     font-size: var(--h3);
     color: var(--black--);
+    font-family:'Autography';
 }
 
 p{
     font-size: var(--p);
     color: var(--black--);
+    font-family: 'Helvetica';
 }
 
 
@@ -66,9 +69,37 @@ p{
     overflow: hidden;
   } 
 
-  .showcase{
+.showcase{
     height: 100vh;
-  }
+}
+
+.about{
+    background-image: url(/img/bg_community.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300vh;
+    
+}
 
 
+.ourvideo{
+    height: 20vh;
+}
 
+.know{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.family{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+
+}
+
+.grid > img{
+    height: 10vh;
+}
