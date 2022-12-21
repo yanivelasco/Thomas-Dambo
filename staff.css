@@ -30,6 +30,7 @@
     --h3: 2rem;
     --h4: 1.3rem;
     --h5: 1rem;
+    --h6: 0.6rem;
     --p: 0.8rem;
     --p_width: 80%;
   
@@ -86,8 +87,105 @@
   }
   
   /* ////////////////////////////HERDER//////////////////////////// */
+  .navbar {
+
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.brand-title {
+    margin: 1rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin-right: 30%;
+    margin-block: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    color: var(--green--);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .svgs{
+        width: 40%;
+    }
+}
+
+
+  
   
   /* ////////////////////////////ART//////////////////////////// */
+  
   #art_part {
     width: 100vw;
   }
@@ -156,15 +254,26 @@
 
 /* KNOW US BETTER */
 
-.ourvideo{
-    height: 20vh;
-}
-
 .know{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 30%;
+}
+
+.video {
+        width: 80%;
+        height: 20vh;
+        overflow: hidden;
+        position: relative;
+      }
+      
+iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 }
 
 /* FAMILY PICTURES */
@@ -200,23 +309,128 @@ h5{
     line-height: 1rem;
 }
 
+/* PRESS */
+
+.title_press{
+    width: 80vw;
+    margin-top: 20%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin:5%;
+    margin-left: 5%;
+    gap:5%;
+
+}
+
+nav img{
+    width: 100%;
+}
+
+
+/* SoMe */
+
+.soMe img {
+    width: 7%;
+}
+
+.soMe {
+    margin-top: 20%;
+}
+
+/* FOOTER */
+
+a{
+    text-decoration: none;
+    font-size: var(--h6);
+    color: var(--gray--);
+    font-family: "Staatliches";
+    font-weight: lighter;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+.main_footer img{
+    width: 80%;
+}
+
+.main_footer{
+    font-size: .9rem;
+    color: var(--black--);
+}
+
+
+
+footer{
+    display: flex;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    gap: 5%;
+    /* background-image: url(/img/footer_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+    
+}
+
 
 
 @media only screen and (min-width: 500px) {
     :root {
       --text_art_top_padding: 30%;
       --image_art_top_padding: 15%;
+      --h6:0.7rem;
   
       --art_image_size: 75%;
     }
     .art_info {
       height: 45vh;
     }
+
+    .video{
+        height: 25vh;
+    }
+
+    .family{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .title_press{
+        margin-top: 10%;
+    }
+
+
+
+    .main_footer{
+        font-size: 1.1rem;;
+    }
+
+    footer{
+        margin-left: 10%;
+    }
+
+    .know{
+        margin-top: 20%;
+    }
   }
+
+  
   
   @media only screen and (min-width: 700px) {
     :root {
       --h2: 2.4rem;
+      --h4: 1rem;
+      --h6: 0.9rem;
       --p: 1.2rem;
       --p_width: 80%;
   
@@ -224,12 +438,38 @@ h5{
       --image_art_top_padding: 15%;
   
       --art_image_size: 65%;
+
     }
+
+    .video{
+        height: 38vh;
+    }
+
+    .main_footer img{
+        width: 60%;
+    }
+
+    .main_footer{
+        font-size: 1.3rem;;
+    }
+
+    footer{
+        gap:7%;
+    }
+
+      .svgs img{
+        width: 20px;
+      } 
+    
   }
+
   
   @media only screen and (min-width: 1000px) {
     :root {
       --h2: 3rem;
+      --h3:2.5rem;
+      --h4: 1.3rem;
+      --h6:1.3rem;
       --p: 1.2rem;
       --p_width: 80%;
   
@@ -250,7 +490,7 @@ h5{
     }
   
     #art_part {
-      height: 300vh;
+      height: 280vh;
       background-image: url(/img/bg_community.png);
       background-size: cover;
       background-repeat: no-repeat;
@@ -304,6 +544,33 @@ h5{
         margin-left: 15%;
         margin-top: 15%;
     }
+
+    .video{
+        height: 50vh;
+    }
+
+    .family{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .main_footer{
+        font-size: 1.7rem;;
+    }
+
+    .main_footer img{
+        width: 70%;
+    }
+
+    footer{
+        margin-left: 9%;
+        gap: 8%;
+    }
+
+    .know{
+        margin-top: 0%;
+    }
+
+  }
 
 
     /* #sculpture .art_info,

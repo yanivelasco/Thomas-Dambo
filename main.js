@@ -1,3 +1,19 @@
+// MENU
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+
+
+
+// DATA BASE
+
+
+
 const url = "https://terithedesigner.dk/wp_td22/wp-json/wp/v2/employee?_embed";
 
 fetch(url)
