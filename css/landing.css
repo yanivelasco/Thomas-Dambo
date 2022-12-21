@@ -384,8 +384,8 @@ footer {
     display: flex;
   }
 
-  .svgs {
-    width: 40%;
+  .svgs img {
+    width: 3rem;
   }
 }
 
