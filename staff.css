@@ -1,0 +1,696 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Autography";
+  font-display: swap;
+  src: url("/fonts/autography/Autography.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("/fonts/HelveticaMedExtObl.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+  --white--: #fdfdfc;
+  --black--: #040d10;
+  --green--: #456b6a;
+  --gray--: #525556;
+
+  --h1: 2.5rem;
+  --h2: 1.8rem;
+  --h3: 2rem;
+  --h4: 1.3rem;
+  --h5: 1rem;
+  --h6: 0.6rem;
+  --p: 1rem;
+  --p_width: 80%;
+
+  --text_art_top_padding: 25%;
+  --image_art_top_padding: 5%;
+
+  /* SCULPTURE art images size */
+  --art_image_size: 90%;
+}
+
+h1 {
+  font-size: var(--h1);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+h2 {
+  font-size: var(--h2);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+h3 {
+  font-size: var(--h3);
+  color: var(--black--);
+  font-family: "Autography";
+  font-weight: lighter;
+}
+h4 {
+  font-size: var(--h4);
+  color: var(--black--);
+  font-family: "Staatliches";
+  font-weight: lighter;
+}
+
+h5 {
+  font-size: var(--h5);
+  color: var(--gray--);
+  font-family: "Staatliches";
+  font-weight: lighter;
+}
+
+p {
+  font-size: var(--p);
+  color: var(--black--);
+  font-family: "Helvetica";
+  width: var(--p_width);
+}
+/* ++++++++++++++++++++++++++++++++++MAIN++++++++++++++++++++++++++++++++++ */
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--white--);
+}
+
+/* ////////////////////////////HERDER//////////////////////////// */
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.brand-title {
+  margin: 1rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin-right: 30%;
+  margin-block: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  color: var(--green--);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .svgs {
+    width: 40%;
+  }
+}
+
+/* ////////////////////////////ART//////////////////////////// */
+
+#art_part {
+  width: 100vw;
+}
+
+.art_info {
+  height: 50vh;
+
+  padding-top: var(--text_art_top_padding);
+  margin: auto;
+  text-align: left;
+  width: 70%;
+}
+.art_info h2 {
+  margin-bottom: 5%;
+  width: 70%;
+  margin: auto;
+}
+.art_info p {
+  margin: auto;
+
+  width: 70%;
+}
+
+#art_info_birdhouse {
+  margin-bottom: 30%;
+  width: 90%;
+}
+
+#sculpture {
+  background-image: url(/img/bg_small_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#birdhouse {
+  background-image: url(/img/bg_small_4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wall {
+  background-image: url(/img/bg_small_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.art_image {
+  margin: auto;
+  margin-top: 15%;
+  width: var(--art_image_size);
+  padding-top: var(--image_art_top_padding);
+}
+.art_image img {
+  height: 80%;
+  width: 80%;
+}
+
+
+/* B ROLL VIDEO */
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.showcase {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.showcase video {
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+
+/* KNOW US BETTER */
+
+.know {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30%;
+}
+
+.video {
+  width: 80%;
+  height: 20vh;
+  overflow: hidden;
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FAMILY PICTURES */
+
+.delete:first-child {
+  display: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_family {
+  width: 40vw;
+  margin-top: 20%;
+}
+
+.family {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10%;
+  gap: 2%;
+}
+
+.portrait {
+  width: 100%;
+}
+
+h5 {
+  line-height: 1rem;
+}
+.joinus {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/* PRESS */
+
+.title_press {
+  width: 80vw;
+  margin-top: 20%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 5%;
+  margin-left: 5%;
+  gap: 5%;
+}
+
+nav img {
+  width: 100%;
+}
+
+/* SoMe */
+
+.soMe img {
+  width: 7%;
+}
+
+.soMe {
+  margin-top: 20%;
+}
+
+/* FOOTER */
+
+a {
+  text-decoration: none;
+  font-size: var(--h6);
+  color: var(--gray--);
+  font-family: "Staatliches";
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+}
+footer {
+  width: 100vw;
+  height: 30vh;
+  background-image: url(/img/footer_bg.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -10rem;
+}
+.main_footer img {
+  width: 80%;
+}
+
+.main_footer {
+  font-size: 0.9rem;
+  color: var(--black--);
+}
+
+#footer_section {
+  display: flex;
+  gap: 5%;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  :root {
+    --text_art_top_padding: 30%;
+    --image_art_top_padding: 15%;
+    --h6: 0.7rem;
+
+    --art_image_size: 75%;
+  }
+  .art_info {
+    height: 45vh;
+  }
+
+  .video {
+    height: 25vh;
+  }
+
+  .family {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .title_press {
+    margin-top: 10%;
+  }
+
+  .main_footer {
+    font-size: 1.1rem;
+  }
+
+  #footer_section {
+    margin-left: 10%;
+  }
+
+  .know {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  :root {
+    --h2: 2.4rem;
+    --h4: 1rem;
+    --h6: 0.9rem;
+    --p: 1.2rem;
+    --p_width: 80%;
+
+    --text_art_top_padding: 30%;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 65%;
+  }
+
+  .video {
+    height: 38vh;
+  }
+
+  .main_footer img {
+    width: 60%;
+  }
+
+  .main_footer {
+    font-size: 1.3rem;
+  }
+
+  #footer_section {
+    gap: 7%;
+  }
+
+  .svgs img {
+    width: 20px;
+  }
+
+  footer {
+    height: 50vh;
+    margin-top: -15rem;
+  }
+  #footer_section {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    --h2: 3rem;
+    --h3: 2.5rem;
+    --h4: 1.3rem;
+    --h6: 1.3rem;
+    --p: 1.2rem;
+    --p_width: 80%;
+
+    --text_art_top_padding: 0;
+    --image_art_top_padding: 0%;
+
+    --art_image_size: 70%;
+  }
+
+  #sculpture {
+    background-image: none;
+  }
+  #birdhouse {
+    background-image: none;
+  }
+  #wall {
+    background-image: none;
+  }
+
+  #art_part {
+    height: 280vh;
+    background-image: url(/img/bg_community.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .art_article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+    width: 95%;
+    margin: auto;
+  }
+
+  .art_info {
+    grid-column-start: 2;
+  }
+
+  .art_image {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 20%;
+    width: 60vw;
+
+  }
+
+  .art_article:nth-child(2),
+  .art_article:nth-child(4) {
+    grid-auto-flow: dense;
+    direction: rtl;
+  }
+  .art_info {
+    text-align: left;
+    margin-left: 35%;
+    margin-top: 38%;
+    /* margin-left: 10%;
+      margin-right: 10%; */
+  }
+  .art_info h2 {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .art_info p {
+    width: 80%;
+    margin-right: 50%;
+  }
+
+  #art_info_birdhouse p {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 0;
+  }
+
+  #art_info_birdhouse {
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+
+  #art_info_wall{
+    width: 80%;
+    margin-right: 30%;
+  }
+
+
+  .video {
+    height: 50vh;
+  }
+
+  .family {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  footer{
+    margin:0;
+  }
+
+  .main_footer {
+    font-size: 1.7rem;
+  }
+
+  .main_footer img {
+    width: 70%;
+  }
+
+  #footer_section {
+    margin-left: 9%;
+    gap: 8%;
+  }
+
+  .know {
+    margin-top: 0%;
+  }
+  .soMe img {
+    width: 4%;
+  }
+  .soMe {
+    margin-top: 10%;
+  }
+  footer {
+    height: 90vh;
+    margin-top: -25rem;
+  }
+  #footer_section {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* #sculpture .art_info,
+    #wall .art_info {
+      text-align: right;
+    } */
+/* .art_image {
+      margin-left: 5%;
+    } */
+/* .art_image:nth-child(4) {
+      margin-left: auto;
+      margin-right: 0%;
+    } */
+
+    /* SCROLL DOWN ANIMATION */
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .down {
+        position: relative;
+        width: 50px;
+        height: 80px;
+        border-radius: 25px;
+        background: transparent;
+        border: 2px solid black;
+        overflow: hidden;
+      }
+      
+      .down:before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: black;
+        left: 50%;
+        top: 10px;
+        transform: translate(-50%, 0);
+        animation: animate 1s linear infinite;
+      }
+      
+      .down:after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 15px;
+        border-radius: 50%;
+        background: black;
+        left: 50%;
+        top: 5px;
+        transform: translate(-50%, 0);
+        border-radius: 3px;
+      }
+      
+      @keyframes animate {
+        0% {
+          transform: translate(-50%, 0px);
+          opacity: 0;
+        }
+        50% {
+          transform: translate(-50%, 40px);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-50%, 80px);
+          opacity: 0;
+        }
+      }
+  
