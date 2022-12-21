@@ -24,7 +24,7 @@
   --black--: #040d10;
   --green--: #456b6a;
 
-  --h1: 2.5rem;
+  --h1: 2rem;
   --h2: 1.6rem;
   --h3: 2rem;
   --h4: 1.3rem;
@@ -36,6 +36,8 @@
 
   /* SCULPTURE art images size */
   --art_image_size: 90%;
+
+  --black_title_width: 15rem;
 }
 
 h1 {
@@ -76,11 +78,26 @@ html {
 
 /* ////////////////////////////HERDER//////////////////////////// */
 
+/* ////////////////////////////TITLE//////////////////////////// */
+#title {
+  background-image: url(/img/bg_small_ractangle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.title_text {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  height: 50vh;
+  padding-top: 10vh;
+}
+#title h4 {
+  margin-top: 5%;
+}
 /* ////////////////////////////ART//////////////////////////// */
 #art_part {
   width: 100vw;
-}
-.art_article {
 }
 .art_info {
   height: 50vh;
@@ -96,9 +113,9 @@ html {
   margin: auto;
 }
 .art_info p {
-  margin: auto;
-
-  width: 70%;
+  text-align: left;
+  width: 100%;
+  margin: 2rem auto 2rem auto;
 }
 .button {
   margin-top: 5%;
@@ -129,9 +146,68 @@ html {
 }
 
 /* ////////////////////////////SHOP//////////////////////////// */
-
+#shop {
+  width: 100%;
+  margin: auto;
+}
+#shop_article {
+  width: 90%;
+  margin: auto;
+}
+.black_title {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+.black_title img {
+  width: var(--black_title_width);
+  margin: auto;
+}
+.see_more p {
+  margin: 1rem;
+  width: 90vw;
+}
+.see_more p {
+  width: auto;
+  display: flex;
+  justify-content: right;
+}
+.product {
+  width: 90%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* ////////////////////////////MAP//////////////////////////// */
+.map_text {
+  margin: auto;
+}
+.map_text p {
+  margin: auto;
+}
 
+#map_image {
+  margin: auto;
+  width: 90vw;
+  height: 60vh;
+  background-image: url(/img/troll_map_small.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#map_button {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#map_button a img {
+  width: 8rem;
+}
 /* ////////////////////////////ABOUT//////////////////////////// */
 
 /* ////////////////////////////GALLERY//////////////////////////// */
@@ -140,6 +216,7 @@ html {
 
 @media only screen and (min-width: 500px) {
   :root {
+    --h1: 2.8rem;
     --text_art_top_padding: 30%;
     --image_art_top_padding: 15%;
 
@@ -152,6 +229,7 @@ html {
 
 @media only screen and (min-width: 700px) {
   :root {
+    --h1: 3.8rem;
     --h2: 2.4rem;
     --p: 1.2rem;
     --p_width: 80%;
@@ -160,6 +238,45 @@ html {
     --image_art_top_padding: 15%;
 
     --art_image_size: 65%;
+  }
+  .title_text {
+    height: 60vh;
+  }
+
+  .see_more p {
+    margin: 1rem;
+    width: 90vw;
+  }
+  .see_more p {
+    width: auto;
+    display: flex;
+    justify-content: right;
+  }
+  .product {
+    width: 30%;
+    margin: 10px;
+  }
+  #shop_products {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  #map_image {
+    width: 80vw;
+    height: 80vh;
+    background-image: url(/img/troll_map.png);
+  }
+  .map_text p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #map_button {
+    left: 50%;
+    top: 15%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -184,27 +301,28 @@ html {
   #wall {
     background-image: none;
   }
-
+  #title {
+    background-image: none;
+  }
   #art_part {
-    height: 300vh;
-    background-image: url(/img/bg_community.png);
-    background-size: cover;
+    height: 410vh;
+    background-image: url(/img/bg_home.png);
+    background-size: 100% 90%;
     background-repeat: no-repeat;
   }
   .art_article {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 90vh;
+    height: 100vh;
     width: 95%;
     margin: auto;
   }
-  .art_article:nth-child(2),
-  .art_article:nth-child(4) {
+  .art_article:nth-child(3) {
     grid-auto-flow: dense;
     direction: rtl;
   }
   .art_info {
-    text-align: left;
+    text-align: right;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -215,8 +333,14 @@ html {
   .art_info p {
     width: 100%;
   }
+  .art_image img {
+    margin: auto;
+  }
   #sculpture .art_info,
   #wall .art_info {
+    text-align: left;
+  }
+  #art_info_birdhouse p {
     text-align: right;
   }
   .art_image {
@@ -228,5 +352,10 @@ html {
   }
   .button {
     margin-top: 10%;
+  }
+
+  #shop {
+    margin-top: -30rem;
+    z-index: 1;
   }
 }
