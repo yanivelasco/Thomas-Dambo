@@ -278,7 +278,9 @@ iframe {
 
 /* FAMILY PICTURES */
 
-
+.delete:first-child {
+    display: none;
+}
 
 .title{
     display: flex;
@@ -307,6 +309,15 @@ iframe {
 
 h5{
     line-height: 1rem;
+}
+.joinus{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 /* PRESS */
