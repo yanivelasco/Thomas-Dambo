@@ -1,0 +1,464 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Autography";
+  font-display: swap;
+  src: url("/fonts/autography/Autography.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("/fonts/HelveticaMedExtObl.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+  --white--: #fdfdfc;
+  --black--: #040d10;
+  --green--: #456b6a;
+
+  --h1: 2rem;
+  --h2: 1.6rem;
+  --h3: 2rem;
+  --h4: 1rem;
+  --p: 0.8rem;
+  --p_width: 80%;
+
+  --text_art_top_padding: 25%;
+  --image_art_top_padding: 5%;
+
+  /* SCULPTURE art images size */
+  --art_image_size: 90%;
+
+  --black_title_width: 15rem;
+}
+
+h1 {
+  font-size: var(--h1);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+h2 {
+  font-size: var(--h2);
+  color: var(--black--);
+  font-family: "Staatliches";
+}
+
+h3 {
+  font-size: var(--h3);
+  color: var(--black--);
+  font-family: "Autography";
+}
+h4 {
+  font-size: var(--h4);
+  color: var(--black--);
+  font-family: "Helvetica";
+}
+
+p {
+  font-size: var(--p);
+  color: var(--black--);
+  font-family: "Helvetica";
+  width: var(--p_width);
+}
+/* ++++++++++++++++++++++++++++++++++MAIN++++++++++++++++++++++++++++++++++ */
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--white--);
+}
+
+/* ////////////////////////////HERDER//////////////////////////// */
+
+/* ////////////////////////////TITLE//////////////////////////// */
+#title {
+  background-image: url(/img/bg_small_ractangle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.title_text {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  height: 50vh;
+  padding-top: 10vh;
+}
+#title h4 {
+  margin-top: 5%;
+}
+/* ////////////////////////////ART//////////////////////////// */
+#art_part {
+  width: 100vw;
+}
+.art_info {
+  height: 50vh;
+
+  padding-top: var(--text_art_top_padding);
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+.art_info h2 {
+  margin-bottom: 5%;
+  width: 70%;
+  margin: auto;
+}
+.art_info p {
+  text-align: left;
+  width: 100%;
+  margin: 2rem auto 2rem auto;
+}
+.button {
+  margin-top: 5%;
+}
+#sculpture {
+  background-image: url(/img/bg_small_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#birdhouse {
+  background-image: url(/img/bg_small_4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wall {
+  background-image: url(/img/bg_small_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.art_image {
+  margin: auto;
+  width: var(--art_image_size);
+  padding-top: var(--image_art_top_padding);
+}
+.art_image img {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* ////////////////////////////SHOP//////////////////////////// */
+#shop {
+  width: 100%;
+  margin: auto;
+}
+#shop_article {
+  width: 90%;
+  margin: auto;
+}
+.black_title {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+.black_title img {
+  width: var(--black_title_width);
+  margin: auto;
+}
+.see_more p {
+  margin: 1rem;
+  width: 90vw;
+}
+.see_more p {
+  width: auto;
+  display: flex;
+  justify-content: right;
+}
+.product {
+  width: 90%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ////////////////////////////MAP//////////////////////////// */
+.map_text {
+  margin: auto;
+}
+.map_text p {
+  margin: auto;
+}
+
+#map_image {
+  margin: auto;
+  width: 90vw;
+  height: 60vh;
+  background-image: url(/img/troll_map_small.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#map_button {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#map_button a img {
+  width: 8rem;
+}
+/* ////////////////////////////ABOUT//////////////////////////// */
+#about {
+  height: 100vh;
+  background-image: url(/img/bg_small_about.png);
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#about_article {
+  width: 90vw;
+  margin: auto;
+}
+.about_text p,
+.about_text h3 {
+  margin: auto;
+  width: 90%;
+}
+.about_text a {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.about_text a img {
+  margin: auto;
+  width: 5rem;
+}
+.about_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33vh;
+}
+.about_div img {
+  width: 80%;
+}
+/* ////////////////////////////GALLERY//////////////////////////// */
+#gallery {
+  width: 80vw;
+  margin: auto;
+}
+#gallery_article {
+  display: grid;
+  grid-template-columns: 2;
+}
+.gallery_grid {
+  width: 100%;
+}
+.gallery_grid img {
+  width: 100%;
+  margin: auto;
+}
+/* ////////////////////////////FOOTER//////////////////////////// */
+
+@media only screen and (min-width: 500px) {
+  :root {
+    --h1: 2.8rem;
+    --text_art_top_padding: 30%;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 75%;
+  }
+  .art_info {
+    height: 45vh;
+  }
+
+  .about_text p,
+  .about_text h3 {
+    width: 70%;
+  }
+  .about_text h3 {
+    text-align: center;
+  }
+  #about {
+    background-size: 140%;
+  }
+  .about_div img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  :root {
+    --h1: 3.8rem;
+    --h2: 2.4rem;
+    --p: 1.2rem;
+    --p_width: 80%;
+
+    --text_art_top_padding: 30%;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 65%;
+  }
+  .title_text {
+    height: 60vh;
+  }
+
+  .see_more p {
+    margin: 1rem;
+    width: 90vw;
+  }
+  .see_more p {
+    width: auto;
+    display: flex;
+    justify-content: right;
+  }
+  .product {
+    width: 30%;
+    margin: 10px;
+  }
+  #shop_products {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  #map_image {
+    width: 80vw;
+    height: 80vh;
+    background-image: url(/img/troll_map.png);
+  }
+  .map_text p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #map_button {
+    left: 50%;
+    top: 15%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .about_text a img {
+    width: 8rem;
+  }
+
+  #gallery_article {
+    display: flex;
+    gap: 1rem;
+  }
+  .gallery_grid {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    --h1: 5rem;
+    --h2: 3rem;
+    --p: 1.2rem;
+    --p_width: 80%;
+    --h4: 1.6rem;
+
+    --text_art_top_padding: 0;
+    --image_art_top_padding: 15%;
+
+    --art_image_size: 70%;
+  }
+
+  #sculpture {
+    background-image: none;
+  }
+  #birdhouse {
+    background-image: none;
+  }
+  #wall {
+    background-image: none;
+  }
+  #title {
+    background-image: none;
+  }
+  #art_part {
+    height: 410vh;
+    background-image: url(/img/bg_home.png);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+  }
+  .art_article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+  }
+  .art_article:nth-child(3) {
+    grid-auto-flow: dense;
+    direction: rtl;
+  }
+  .art_info {
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .art_info h2 {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .art_info p {
+    width: 100%;
+  }
+  .art_image img {
+    margin: auto;
+  }
+  #sculpture .art_info,
+  #wall .art_info {
+    text-align: left;
+  }
+  #art_info_birdhouse p {
+    text-align: right;
+  }
+  .art_image {
+    margin-left: 5%;
+  }
+  .art_image:nth-child(4) {
+    margin-left: auto;
+    margin-right: 0%;
+  }
+  .button {
+    margin-top: 10%;
+    z-index: 2;
+  }
+
+  #shop {
+    margin-top: -30rem;
+    z-index: 1;
+  }
+
+  #about_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_text p,
+  .about_text h3 {
+    margin: auto;
+    width: 50%;
+    flex-shrink: 2;
+  }
+  .about_text p {
+    font-size: 1rem;
+  }
+  .about_text h3 {
+    text-align: center;
+  }
+  #about {
+    display: flex;
+    background-size: cover;
+    align-items: center;
+  }
+  .about_div img {
+    width: 120%;
+  }
+}
