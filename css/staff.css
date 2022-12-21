@@ -8,13 +8,13 @@
 @font-face {
   font-family: "Autography";
   font-display: swap;
-  src: url("/fonts/autography/Autography.otf") format("truetype");
+  src: url("../fonts/autography/Autography.otf") format("truetype");
 }
 
 @font-face {
   font-family: "Helvetica";
   font-display: swap;
-  src: url("/fonts/Helvetica-Neue-Medium-Extended.otf");
+  src: url("../fonts/Helvetica-Neue-Medium-Extended.otf");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
@@ -207,17 +207,17 @@ html {
 }
 
 #sculpture {
-  background-image: url(/img/bg_small_1.png);
+  background-image: url("../img/bg_small_1.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 #birdhouse {
-  background-image: url(/img/bg_small_4.png);
+  background-image: url("../img/bg_small_4.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 #wall {
-  background-image: url(/img/bg_small_3.png);
+  background-image: url("../img/bg_small_3.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -374,7 +374,7 @@ ul {
 footer {
   width: 100vw;
   height: 30vh;
-  background-image: url(/img/footer_bg.png);
+  background-image: url("../img/footer_bg.png");
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -504,7 +504,7 @@ footer {
 
   #art_part {
     height: 280vh;
-    background-image: url(/img/bg_community.png);
+    background-image: url("../img/bg_community.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
