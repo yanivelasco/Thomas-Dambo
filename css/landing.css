@@ -80,7 +80,7 @@ html {
 
 /* ////////////////////////////TITLE//////////////////////////// */
 #title {
-  background-image: url("img/bg_small_ractangle.png");
+  background-image: url("/img/bg_small_ractangle.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -121,17 +121,17 @@ html {
   margin-top: 5%;
 }
 #sculpture {
-  background-image: url("img/bg_small_1.png");
+  background-image: url("/img/bg_small_1.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 #birdhouse {
-  background-image: url("img/bg_small_4.png");
+  background-image: url("/img/bg_small_4.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 #wall {
-  background-image: url("img/bg_small_3.png");
+  background-image: url("/img/bg_small_3.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -192,7 +192,7 @@ html {
   margin: auto;
   width: 90vw;
   height: 60vh;
-  background-image: url("img/troll_map_small.png");
+  background-image: url("/img/troll_map_small.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,7 +212,7 @@ html {
 /* ////////////////////////////ABOUT//////////////////////////// */
 #about {
   height: 100vh;
-  background-image: url("img/bg_small_about.png");
+  background-image: url("/img/bg_small_about.png");
   background-size: 200%;
   background-position: center;
   background-repeat: no-repeat;
@@ -454,7 +454,7 @@ footer {
   #map_image {
     width: 80vw;
     height: 80vh;
-    background-image: url(img/troll_map.png);
+    background-image: url("/img/troll_map.png");
   }
   .map_text p {
     width: 50%;
