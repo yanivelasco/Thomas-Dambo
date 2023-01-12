@@ -99,11 +99,9 @@ body {
   margin-top: 1.5rem;
 }
 
-.brand-title img{
+.brand-title img {
   width: 12rem;
 }
-
-
 
 .navbar-links ul {
   display: flex;
@@ -346,7 +344,7 @@ main {
 }
 .about_text a img {
   margin: auto;
-  width: 5rem;
+  width: 8rem;
 }
 .about_div {
   display: flex;
@@ -521,14 +519,7 @@ footer {
   }
 
   .brand-title {
-    margin-right: 50%;
-    margin-top: 1.5rem;
-    width: 10rem;
-    
-  }
-
-  .brand-title img{
-    width: 10rem;
+    margin-right: 65%;
   }
 
   .toggle-button {
