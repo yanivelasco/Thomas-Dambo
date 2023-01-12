@@ -522,7 +522,7 @@ footer {
     margin-right: 50%;
   }
 
-   .brand-title img {
+  .brand-title img {
     width: 10rem;
   }
 
@@ -818,22 +818,19 @@ footer {
   }
 }
 
-
-@media only screen and (max-width: 400px){
-  .soMe{
+@media only screen and (max-width: 400px) {
+  .soMe {
     display: none;
   }
 
-  #footer_section{
+  #footer_section {
     display: none;
   }
 
-  footer{
-    background-image: url("../img/footer_1.png") ;
+  footer {
+    background-image: url("../img/footer_1.png");
     background-size: cover;
-    height: 100%;
-    width: 100%;
-
+    height: 100vh;
+    width: 100vw;
   }
-  
 }
