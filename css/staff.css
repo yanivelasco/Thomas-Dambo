@@ -250,6 +250,7 @@ html {
 
 .showcase {
   height: 100vh;
+  margin-bottom: -10rem;
   position: relative;
   z-index: 0;
 }
