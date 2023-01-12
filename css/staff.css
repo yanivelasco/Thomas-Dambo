@@ -363,10 +363,11 @@ nav img {
 
 a {
   text-decoration: none;
-  font-size: var(--h6);
+  font-size: 1.4rem;
   color: var(--gray--);
   font-family: "Staatliches";
   font-weight: lighter;
+  line-height: 2.5rem;
 }
 
 ul {
@@ -385,7 +386,7 @@ footer {
   margin-top: -10rem;
 }
 .main_footer img {
-  width: 80%;
+  width: 70%;
 }
 
 .main_footer {
@@ -395,7 +396,7 @@ footer {
 
 #footer_section {
   display: flex;
-  gap: 5%;
+  gap: 10%;
   width: 80%;
   margin-bottom: 1rem;
 }
@@ -562,8 +563,8 @@ footer {
     margin-bottom: 30%;
   }
   .video {
-    height: 70vh;
-    width: 80vw;
+    height: 75vh;
+    width: 70vw;
   }
 
   .family {
@@ -575,15 +576,15 @@ footer {
   }
 
   .main_footer {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
 
   .main_footer img {
-    width: 70%;
+    width: var(--black_title_width);
   }
 
   #footer_section {
-    margin-left: 9%;
+    margin-left: 15%;
     gap: 8%;
   }
 
@@ -597,11 +598,11 @@ footer {
     margin-top: 10%;
   }
   footer {
-    height: 90vh;
+    height: 80vh;
     margin-top: -25rem;
   }
   #footer_section {
-    margin-bottom: 0.5rem;
+    margin-bottom: 4rem;
   }
 }
 
