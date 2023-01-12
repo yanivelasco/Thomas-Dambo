@@ -104,7 +104,6 @@ html {
   width: 12rem;
 }
 
-
 .navbar-links ul {
   display: flex;
   margin-right: 25%;
@@ -161,9 +160,8 @@ html {
     height: 100vh;
   }
 
-  .brand-title{
+  .brand-title {
     margin-right: 60%;
-
   }
 
   .toggle-button {
@@ -194,7 +192,6 @@ html {
   .navbar-links li a {
     font-size: 2rem;
   }
-
 }
 
 /* ////////////////////////////ART//////////////////////////// */
