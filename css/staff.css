@@ -85,7 +85,7 @@ html {
   background-color: var(--white--);
 }
 
-/* ////////////////////////////HERDER//////////////////////////// */
+/* ////////////////////////////NAVBAR//////////////////////////// */
 .navbar {
   display: flex;
   position: fixed;
@@ -100,6 +100,8 @@ html {
 
 .brand-title {
   margin: 1rem;
+  margin-top: 1.5rem;
+  width: 12rem;
 }
 
 .navbar-links {
@@ -144,6 +146,11 @@ html {
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+
+.search{
+  width: 2rem;
+  margin-top: 0.65rem;
 }
 
 @media (max-width: 700px) {
