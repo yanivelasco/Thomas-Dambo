@@ -97,12 +97,13 @@ body {
 .brand-title {
   margin: 1rem;
   margin-top: 1.5rem;
+}
+
+.brand-title img{
   width: 12rem;
 }
 
-.navbar-links {
-  height: 100%;
-}
+
 
 .navbar-links ul {
   display: flex;
@@ -119,7 +120,8 @@ body {
   display: block;
   text-decoration: none;
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-links li:hover {
@@ -146,7 +148,7 @@ body {
 
 .search {
   width: 2rem;
-  margin-top: 0.65rem;
+  margin-top: 0.3rem;
 }
 
 /* ////////////////////////////HEADER//////////////////////////// */
@@ -510,23 +512,40 @@ footer {
 @media (max-width: 700px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links {
+    height: 100vh;
+  }
+
+  .brand-title{
+    margin-right: 65%;
   }
 
   .toggle-button {
     display: flex;
+    margin-top: 1rem;
   }
 
   .navbar-links {
     display: none;
   }
 
+  .navbar-links li a {
+    font-size: 2rem;
+  }
+
   .navbar-links ul {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar-links ul li a {
     padding: 0.5rem 1rem;
+    margin: 1.5rem;
   }
 
   .navbar-links.active {

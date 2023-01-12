@@ -104,13 +104,10 @@ html {
   width: 12rem;
 }
 
-.navbar-links {
-  height: 100%;
-}
 
 .navbar-links ul {
   display: flex;
-  margin-right: 30%;
+  margin-right: 25%;
   margin-block: 0;
   padding: 0;
 }
@@ -156,11 +153,22 @@ html {
 @media (max-width: 700px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links {
+    height: 100vh;
+  }
+
+  .brand-title{
+    margin-right: 60%;
+
   }
 
   .toggle-button {
     display: flex;
+    margin-top: 1rem;
   }
 
   .navbar-links {
@@ -182,6 +190,11 @@ html {
   .svgs {
     width: 40%;
   }
+
+  .navbar-links li a {
+    font-size: 2rem;
+  }
+
 }
 
 /* ////////////////////////////ART//////////////////////////// */
@@ -211,7 +224,7 @@ html {
 
 #art_info_birdhouse {
   margin-bottom: 30%;
-  width: 90%;
+  width: 80%;
 }
 
 #sculpture {
@@ -250,6 +263,7 @@ html {
 
 .showcase {
   height: 100vh;
+  margin-bottom: -10rem;
   position: relative;
   z-index: 0;
 }
