@@ -94,6 +94,9 @@ html {
 .brand-title {
   margin: 1rem;
   margin-top: 1.5rem;
+}
+
+.brand-title img{
   width: 12rem;
 }
 
@@ -116,7 +119,8 @@ html {
   display: block;
   text-decoration: none;
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-links li:hover {
@@ -143,7 +147,7 @@ html {
 
 .search{
   width: 2rem;
-  margin-top: 0.65rem;
+  margin-top: 0.3rem;
 }
 
 /* ////////////////////////////HEADER//////////////////////////// */
