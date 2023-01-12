@@ -84,7 +84,9 @@ html {
   overflow-x: hidden;
   background-color: var(--white--);
 }
-
+main {
+  overflow-x: hidden;
+}
 /* ////////////////////////////NAVBAR//////////////////////////// */
 .navbar {
   display: flex;
