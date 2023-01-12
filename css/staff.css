@@ -678,6 +678,29 @@ h3{
   #footer_section {
     margin-bottom: 4rem;
   }
+
+  .joinus{
+    width: 12rem;
+    margin-top: 3rem;
+  }
+  
+  h3{
+    font-size: 5rem;
+  }
+  
+  .title_press {
+    width: 45rem;
+    margin-top: 10%;
+  }
+  
+  .title_family {
+    width: 20rem;
+    margin-top: 10%;
+  }
+
+  .main_footer img {
+    width: 15rem;
+  }
 }
 
 /* #sculpture .art_info,
