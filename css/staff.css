@@ -224,13 +224,13 @@ html {
 }
 .art_image {
   margin: auto;
-  margin-top: 15%;
   width: var(--art_image_size);
   padding-top: var(--image_art_top_padding);
 }
 .art_image img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 /* B ROLL VIDEO */
@@ -507,69 +507,63 @@ footer {
   }
 
   #art_part {
-    height: 280vh;
+    margin-top: 10rem;
+    height: 320vh;
     background-image: url("../img/bg_community.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .art_article {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 90vh;
-    width: 95%;
+    height: 100vh;
+    width: 90%;
     margin: auto;
   }
-
-  .art_info {
-    grid-column-start: 2;
-  }
-
-  .art_image {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    margin-top: 50%;
-    margin-left: 10%;
-    margin-right: 20%;
-    width: 60vw;
-  }
-
-  .art_article:nth-child(2),
-  .art_article:nth-child(4) {
+  .art_article:nth-child(1),
+  .art_article:nth-child(3) {
     grid-auto-flow: dense;
     direction: rtl;
   }
+  .art_article .art_info p,
+  .art_article .art_info h2 {
+    grid-auto-flow: dense;
+    direction: ltr;
+  }
   .art_info {
-    text-align: left;
-    margin-left: 35%;
-    margin-top: 38%;
-    /* margin-left: 10%;
-      margin-right: 10%; */
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .art_info h2 {
     margin-bottom: 5%;
     width: 100%;
   }
   .art_info p {
-    width: 80%;
-    margin-right: 50%;
-  }
-
-  #art_info_birdhouse p {
     width: 100%;
+  }
+  .art_image img {
+    margin: auto;
+  }
+  #sculpture .art_info,
+  #wall .art_info {
+    text-align: right;
+  }
+  #art_info_birdhouse p {
+    text-align: left;
+  }
+  #art_info_birdhouse h2 {
+    text-align: left;
+  }
+  .art_image {
     margin-left: 10%;
-    margin-right: 0;
   }
-
-  #art_info_birdhouse {
-    margin-left: 15%;
-    margin-top: 15%;
+  #birdhouse .art_image {
+    margin-left: 25%;
   }
-
-  #art_info_wall {
-    width: 80%;
-    margin-right: 30%;
+  .art_image img {
+    margin-bottom: 30%;
   }
-
   .video {
     height: 75vh;
     width: 70vw;
