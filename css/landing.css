@@ -817,3 +817,23 @@ footer {
     margin-bottom: 0rem;
   }
 }
+
+
+@media only screen and (max-width: 400px){
+  .soMe{
+    display: none;
+  }
+
+  #footer_section{
+    display: none;
+  }
+
+  footer{
+    background-image: url("../img/footer_1.png") ;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+  }
+  
+}
