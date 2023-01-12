@@ -27,7 +27,7 @@
 
   --h1: 2rem;
   --h2: 1.6rem;
-  --h3: 4rem;
+  --h3: 2rem;
   --h4: 1rem;
   --p: 0.8rem;
   --p_width: 80%;
@@ -157,7 +157,9 @@ main {
     align-items: center;
     justify-content: center;
   }
-
+  .art_info h2 {
+    text-align: center;
+  }
   .navbar-links {
     height: 100vh;
   }
@@ -194,11 +196,15 @@ main {
   .navbar-links li a {
     font-size: 2rem;
   }
+  #birdhouse .art_image {
+    margin-top: -10rem;
+  }
 }
 
 /* ////////////////////////////ART//////////////////////////// */
 
 #art_part {
+  margin-top: 8rem;
   width: 100vw;
 }
 
@@ -218,11 +224,11 @@ main {
 .art_info p {
   margin: auto;
 
-  width: 70%;
+  width: 100%;
 }
 
 #art_info_birdhouse {
-  margin-bottom: 30%;
+  margin-bottom: 45%;
   width: 80%;
 }
 
