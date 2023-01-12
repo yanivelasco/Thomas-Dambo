@@ -519,7 +519,11 @@ footer {
   }
 
   .brand-title {
-    margin-right: 65%;
+    margin-right: 50%;
+  }
+
+   .brand-title img {
+    width: 10rem;
   }
 
   .toggle-button {
