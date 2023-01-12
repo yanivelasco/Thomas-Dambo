@@ -636,22 +636,23 @@ footer {
   }
 
   .main_footer {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
 
   .main_footer img {
-    width: 70%;
+    width: var(--black_title_width);
   }
 
   #footer_section {
-    margin-left: 9%;
+    margin-left: 15%;
     gap: 8%;
   }
+
   footer {
     height: 90vh;
-    margin-top: -2rem;
+    margin-top: 2rem;
   }
   #footer_section {
-    margin-bottom: 0.5rem;
+    margin-bottom: 4rem;
   }
 }
