@@ -281,6 +281,7 @@ a {
 
 ul {
   list-style-type: none;
+  margin-bottom: 5rem;
 }
 footer {
   width: 100vw;
