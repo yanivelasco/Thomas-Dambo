@@ -37,6 +37,7 @@
 
   /* SCULPTURE art images size */
   --art_image_size: 90%;
+  --black_title_width: 15rem;
 }
 
 h1 {
@@ -299,7 +300,7 @@ iframe {
 }
 
 .title_family {
-  width: 40vw;
+  width: var(--black_title_width);
   margin-top: 20%;
 }
 
@@ -322,7 +323,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vw;
+  width: var(--black_title_width);
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -330,7 +331,7 @@ h5 {
 /* PRESS */
 
 .title_press {
-  width: 80vw;
+  width: var(--black_title_width);
   margin-top: 20%;
 }
 
