@@ -270,6 +270,18 @@ header div img {
   margin: auto;
 }
 /* ////////////////////////////FOOTER//////////////////////////// */
+
+a {
+  text-decoration: none;
+  font-size: var(--h6);
+  color: var(--gray--);
+  font-family: "Staatliches";
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+}
 footer {
   width: 100vw;
   height: 30vh;
