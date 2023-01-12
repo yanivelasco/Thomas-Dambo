@@ -636,15 +636,15 @@ footer {
   }
 
   .main_footer {
-    font-size: 2,5rem;
+    font-size: 1.7rem;
   }
 
   .main_footer img {
-    width: var(--black_title_width);
+    width: 70%;
   }
 
   #footer_section {
-    margin-left: 15%;
+    margin-left: 9%;
     gap: 8%;
   }
   footer {
