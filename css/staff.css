@@ -163,7 +163,10 @@ main {
   }
 
   .brand-title {
-    margin-right: 60%;
+    margin-right: 50%;
+    margin-top: 1.5rem;
+    width: 10rem;
+    
   }
 
   .toggle-button {
@@ -420,11 +423,16 @@ footer {
   margin-bottom: 1rem;
 }
 
+
+
+
+
 @media only screen and (min-width: 500px) {
   :root {
     --h1: 2.8rem;
     --text_art_top_padding: 30%;
     --image_art_top_padding: 15%;
+    --black_title_width: 5rem;
 
     --art_image_size: 75%;
   }
@@ -455,6 +463,30 @@ footer {
   .know {
     margin-top: 20%;
   }
+}
+
+.joinus{
+  width: 8rem;
+  margin-top: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+.title_press {
+  width: 20rem;
+  margin-top: 20%;
+}
+
+.title_family {
+  width: 10rem;
+  margin-top: 10%;
+}
+
+.video {
+  height: 28vh;
+  width: 80vw;
 }
 
 @media only screen and (min-width: 700px) {
