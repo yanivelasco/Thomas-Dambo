@@ -325,7 +325,6 @@ h5 {
   justify-content: center;
   width: 12rem;
   margin-top: 0%;
-  
 }
 
 /* PRESS */
@@ -333,7 +332,6 @@ h5 {
 .title_press {
   width: 30rem;
   margin-top: 10%;
-  
 }
 
 nav ul {
@@ -373,7 +371,6 @@ a {
 
 ul {
   list-style-type: none;
-
 }
 footer {
   width: 100vw;
@@ -591,7 +588,7 @@ footer {
   }
 
   .know {
-    margin-top: 20%;
+    margin-top: -5%;
   }
   .soMe img {
     width: 4%;
