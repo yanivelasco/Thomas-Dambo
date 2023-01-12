@@ -104,7 +104,6 @@ html {
   width: 12rem;
 }
 
-
 .navbar-links ul {
   display: flex;
   margin-right: 25%;
@@ -145,7 +144,7 @@ html {
   border-radius: 10px;
 }
 
-.search{
+.search {
   width: 2rem;
   margin-top: 0.65rem;
 }
@@ -161,9 +160,8 @@ html {
     height: 100vh;
   }
 
-  .brand-title{
+  .brand-title {
     margin-right: 60%;
-
   }
 
   .toggle-button {
@@ -194,7 +192,6 @@ html {
   .navbar-links li a {
     font-size: 2rem;
   }
-
 }
 
 /* ////////////////////////////ART//////////////////////////// */
@@ -646,7 +643,7 @@ footer {
 
 .center {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
