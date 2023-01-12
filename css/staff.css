@@ -104,9 +104,6 @@ html {
   width: 12rem;
 }
 
-.navbar-links {
-  height: 100vh;
-}
 
 .navbar-links ul {
   display: flex;
@@ -124,7 +121,6 @@ html {
   text-decoration: none;
   color: white;
   padding: 1rem;
-  font-size: 2rem;
 }
 
 .navbar-links li:hover {
@@ -161,6 +157,10 @@ html {
     justify-content: center;
   }
 
+  .navbar-links {
+    height: 100vh;
+  }
+
   .brand-title{
     margin-right: 60%;
 
@@ -190,6 +190,11 @@ html {
   .svgs {
     width: 40%;
   }
+
+  .navbar-links li a {
+    font-size: 2rem;
+  }
+
 }
 
 /* ////////////////////////////ART//////////////////////////// */

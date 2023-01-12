@@ -103,9 +103,7 @@ body {
   width: 12rem;
 }
 
-.navbar-links {
-  height: 100vh;
-}
+
 
 .navbar-links ul {
   display: flex;
@@ -124,7 +122,6 @@ body {
   color: white;
   padding: 1.5rem;
   padding-bottom: 1rem;
-  font-size: 2rem;
 }
 
 .navbar-links li:hover {
@@ -411,6 +408,10 @@ footer {
     justify-content: center;
   }
 
+  .navbar-links {
+    height: 100vh;
+  }
+
   .brand-title{
     margin-right: 65%;
   }
@@ -422,6 +423,10 @@ footer {
 
   .navbar-links {
     display: none;
+  }
+
+  .navbar-links li a {
+    font-size: 2rem;
   }
 
   .navbar-links ul {
