@@ -63,7 +63,8 @@ h4 {
   font-family: "Helvetica";
 }
 
-p {
+p,
+footer {
   font-size: var(--p);
   color: var(--black--);
   font-family: "Helvetica";
@@ -279,7 +280,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: -10rem;
 }
 .main_footer img {
   width: 80%;
@@ -631,7 +631,7 @@ footer {
   }
   footer {
     height: 90vh;
-    margin-top: -25rem;
+    margin-top: -2rem;
   }
   #footer_section {
     margin-bottom: 0.5rem;
